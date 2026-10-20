@@ -8,7 +8,7 @@
 
 | 弹窗 | 完整报告 |
 |---|---|
-| ![popup](docs/popup-zh.png) | ![report](docs/report-zh.png) |
+| ![popup](https://raw.githubusercontent.com/Monkeykkkk/web-time-tracker/main/docs/popup-zh.png) | ![report](https://raw.githubusercontent.com/Monkeykkkk/web-time-tracker/main/docs/report-zh.png) |
 
 ---
 

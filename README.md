@@ -4,14 +4,14 @@ A local-only browser extension that measures how much time you actually spend on
 
 **All data stays on your machine (`chrome.storage.local`). No server, no account, no telemetry, no analytics.**
 
-![tests](../../actions/workflows/test.yml/badge.svg)
+![tests](https://github.com/Monkeykkkk/web-time-tracker/actions/workflows/test.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![manifest](https://img.shields.io/badge/manifest-v3-green.svg)
 ![browser](https://img.shields.io/badge/browser-Edge%20%7C%20Chrome%20%7C%20Brave-lightgrey.svg)
 
 | Popup | Full report |
 |---|---|
-| ![popup](docs/popup-en.png) | ![report](docs/report-en.png) |
+| ![popup](https://raw.githubusercontent.com/Monkeykkkk/web-time-tracker/main/docs/popup-en.png) | ![report](https://raw.githubusercontent.com/Monkeykkkk/web-time-tracker/main/docs/report-en.png) |
 
 ---
 
