@@ -1,0 +1,18 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# Dependency / build output
+node_modules/
+dist/
+build/
+
+# Local scratch files — never put these inside an extension folder,
+# but ignore them here in case they end up in the repo root anyway
+*.log
+.tmp/
+tmp/
+.vscode/
+.idea/

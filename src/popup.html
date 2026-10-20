@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>网页时间统计</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header class="p-head">
+    <span class="p-total-label" data-i18n="popup.totalLabel">今天网页时间</span>
+    <span class="p-total-val" id="total">—</span>
+    <button class="lang-sw" id="langSw" type="button" data-i18n-attr="title:lang.switchTo">EN</button>
+    <div class="p-live" id="live">
+      <span class="dot"></span>
+      <span class="live-title" id="liveText" data-i18n="popup.loading">正在读取…</span>
+      <span class="live-time" id="liveTime"></span>
+    </div>
+  </header>
+
+  <main class="p-body">
+    <div class="p-section-title">
+      <span data-i18n="popup.sectionTitle">今日站点排行</span>
+      <span id="count"></span>
+    </div>
+    <div class="list" id="list"></div>
+  </main>
+
+  <footer class="p-foot">
+    <button class="btn btn-primary" id="open" data-i18n="btn.report">完整报告</button>
+    <button class="btn" id="pause">暂停记录</button>
+  </footer>
+
+  <script src="lib/categories.js"></script>
+  <script src="lib/i18n.js"></script>
+  <script src="lib/demo.js"></script>
+  <script src="lib/store.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

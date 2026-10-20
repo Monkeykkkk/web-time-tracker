@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ['20', '22']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Timing state machine
+        run: node test/sim.js
+
+      - name: Locale logic
+        run: node test/i18n_test.js
+
+      - name: Manifest integrity
+        run: node test/check_ext.js .

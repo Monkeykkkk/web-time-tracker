@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>网页时间统计 · 报告</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dash">
+  <div class="d-wrap">
+    <header class="d-head">
+      <div>
+        <h1 data-i18n="app.name">网页时间统计</h1>
+        <p class="d-sub" id="subtitle" data-i18n="dash.subtitle">数据保存在本机，不上传任何服务器</p>
+      </div>
+      <div class="d-range">
+        <button class="chip active" data-range="1" data-i18n="dash.range.today">今天</button>
+        <button class="chip" data-range="7" data-i18n="dash.range.7">最近 7 天</button>
+        <button class="chip" data-range="30" data-i18n="dash.range.30">最近 30 天</button>
+        <button class="chip" id="export" data-i18n="dash.export">导出 JSON</button>
+        <button class="chip lang-chip" id="langSw" type="button" data-i18n-attr="title:lang.switchTo">EN</button>
+      </div>
+    </header>
+
+    <section class="cards" id="cards"></section>
+
+    <section class="panel">
+      <h2><span data-i18n="panel.hours">时段分布</span><span class="hint" data-i18n="panel.hoursHint">按小时的累计时长</span></h2>
+      <div class="hours" id="hours"></div>
+      <div class="hour-axis" id="hourAxis"></div>
+    </section>
+
+    <div class="d-grid2">
+      <section class="panel">
+        <h2 data-i18n="panel.cats">分类占比</h2>
+        <div class="cat-grid" id="cats"></div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="panel.overview">记录概览</h2>
+        <div class="cat-grid" id="overview"></div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2><span data-i18n="panel.sites">站点排行</span><span class="hint" data-i18n="panel.sitesHint">展开可看页面级明细</span></h2>
+      <div id="sites"></div>
+    </section>
+
+    <p class="d-foot" id="foot"></p>
+  </div>
+
+  <script src="lib/categories.js"></script>
+  <script src="lib/i18n.js"></script>
+  <script src="lib/demo.js"></script>
+  <script src="lib/store.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

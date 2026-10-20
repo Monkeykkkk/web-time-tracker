@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "网页时间统计",
+  "version": "1.0.0",
+  "description": "统计每个网页的实际停留时间。数据只保存在本机，不联网、不上传。",
+  "permissions": ["tabs", "storage", "alarms", "idle"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "网页时间统计"
+  },
+  "options_page": "src/dashboard.html",
+  "minimum_chrome_version": "102"
+}
